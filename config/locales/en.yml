@@ -684,7 +684,7 @@ en:
       newsletter: "Subscribe to our news"
       contact: "Finding Help"
     links:
-      start_campaign: '<a href="http://silveralms.com/en/pages/how_it_works">Send a Request</a>'
+      start_campaign: '<a href="http://silveralms.com//en/projects/new">Send a Request</a>'
       recieving_funds: '<a href="http://blog.silveralms.com/recievingfunds">Recieving Funds</a>'
       reach_out: '<a href="http://blog.silveralms.com/reachout">Reach Out</a>'
       legal: '<a href="http://blog.silveralms.com/policy">Our Policy</a>'

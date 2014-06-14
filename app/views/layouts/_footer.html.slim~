@@ -25,7 +25,7 @@ footer.footer
           ul.footer-list
             li= link_to t('footer.links.about').html_safe
             li= link_to t('footer.links.contact_us').html_safe
-            li= link_to t('footer.links.blog').html_safe
+            li= link_to t('footer.links.blog1').html_safe
             li= link_to t('footer.links.terms').html_safe
 
       .footer-div

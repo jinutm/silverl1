@@ -694,7 +694,7 @@ en:
       assurance: '<a href="http://blog.silveralms.com/assurance">Assurance</a>'
       about: '<a href="http://blog.silveralms.com/about">About Us</a>'
       contact_us: '<a href="http://blog.silveralms.com/contactus">Contact Us</a>'
-      blog: '<a href="http://blog.silveralms.com">Blog</a>'
+      blog1: '<a href="http://blog.silveralms.com">Blog</a>'
       terms: '<a href="http://blog.silveralms.com/terms">Terms and Conditions</a>'
       faq: "Help"
       feedback: "Feedback"
