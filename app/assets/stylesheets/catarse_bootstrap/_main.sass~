@@ -222,8 +222,7 @@ p
 
 .logo-login
   display: block
-  width: 150px
-  height: 61px
+  height: 120px
   margin: 22px auto 22px auto
   &:hover
     opacity: 0.5
