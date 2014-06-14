@@ -1,11 +1,11 @@
 pt:
   channels:
     admin:
-      menu: "Moderação de Canais"
-      followers_menu: "Seguidores"
-      statistics_menu: "Estatísticas"
-      profile_menu: "Editar canal"
-      partners_menu: "Editar parceiros"
+      menu: "Moderation Channels"
+      followers_menu: "Followers"
+      statistics_menu: "Statistics"
+      profile_menu: "My Profile"
+      partners_menu: "Edit partners"
       statistics:
         title: 'Estatísticas do canal'
         total_subscribers: 'Total de assinantes'
@@ -68,7 +68,7 @@ pt:
             do canal.
         warning_html: Lembrando que toda novidade publicada vai diretamente para o
           email de seus seguidores. Por isso, revise bem seu texto antes de enviá-lo.
-      posts_menu: Gerenciar novidades
+      posts_menu: Manage News
       table:
         approve: Aprovar
         category: Categoria
@@ -84,11 +84,11 @@ pt:
         pledged: Alcançado
         publish_action: Publicar
         recommended: Recomendar
-        reject: Rejeitar
-        send_to_draft: Enviar para rascunho
-        send_to_trash: DELETAR PROJETO
-        show_action: Visualizar
-        state: Estado
+        reject: Reject
+        send_to_draft: Send to Draft
+        send_to_trash: Delete Project
+        show_action: Visualize
+        state: state
         total_contributions: Apoios
         unpublish_action: Despublicar
         user: Usuário

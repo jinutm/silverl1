@@ -16,7 +16,7 @@ pt:
         pledged: 'Alcançado'
         recommended: 'Recomendado?'
         state: 'Estado'
-        menu: 'Rel. Financeiros'
+        menu: 'Financials'
         title: 'Relatórios financeiros'
         contribution_report: "Relatório de apoiadores"
         search_report: "Relatório da busca"
@@ -51,7 +51,7 @@ pt:
         recommended: 'Recomendado?'
         state: 'Estado'
         no_projects: 'Nenhum projeto encontrado'
-        menu: 'Admin projetos'
+        menu: 'Projects'
         title: 'Gerenciamento de projetos'
         total_projects: 'projetos'
         submit: 'filtrar'
@@ -68,7 +68,7 @@ pt:
     users:
       index:
         title: "Gerenciamento de apoiadores"
-        menu: "Apoiadores"
+        menu: "Users"
         credits: "Créditos"
         credits_view: "Créditos calculados"
         id: Id
@@ -121,7 +121,7 @@ pt:
         refund_contribution: 'Estornar apoio'
         title: "Gerenciamento de apoios"
         state: 'Estado'
-        menu: "Apoios"
+        menu: "Contributions"
         anonymous: Anônimo?
         contribution: Apoio
         confirmed: Confirmado?
@@ -143,7 +143,7 @@ pt:
         value: Valor
     statistics:
       index:
-        menu: "Estatísticas"
+        menu: "Statistics"
         title: "Estatísticas"
         total_users: "Usuários"
         total_contributions: "Apoios"

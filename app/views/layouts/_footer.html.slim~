@@ -1,0 +1,39 @@
+footer.footer
+  .centered
+    .row
+      .footer-div
+        .footer-list
+          h3.footer-title= t('.titles.contact')
+          ul.footer-list
+            li= link_to t('footer.links.start_campaign').html_safe
+            li= link_to t('footer.links.recieving_funds').html_safe
+            li= link_to t('footer.links.reach_out').html_safe
+            li= link_to t('footer.links.legal').html_safe
+
+      .footer-div
+        .footer-list
+          h3.footer-title= t('.titles.about')
+          ul.footer-list
+            li= link_to t('footer.links.how_it_works').html_safe
+            li= link_to t('footer.links.how_to_fund').html_safe
+            li= link_to t('footer.links.payment_options').html_safe
+            li= link_to t('footer.links.assurance').html_safe
+
+      .footer-div
+        .footer-list
+          h3.footer-title= t('.titles.sitemap')
+          ul.footer-list
+            li= link_to t('footer.links.about').html_safe
+            li= link_to t('footer.links.contact_us').html_safe
+            li= link_to t('footer.links.blog').html_safe
+            li= link_to t('footer.links.terms').html_safe
+
+      .footer-div
+        h3.footer-title= "Subscribe to Our Newsletter"
+        .newsletter-footer
+          = render 'layouts/newsletter'
+        h3.footer-title= "Follow Us on Twitter"
+        .twitter-box
+          = link_to "Follow @#{CatarseSettings[:twitter_username]}", "http://twitter.com/#{CatarseSettings[:twitter_username]}", :class => 'twitter-follow-button', :"data-button"=>"blue", :"data-text-color" => "#ffffff", :"data-link-color"=>"#fffffff", :"data-width" => "224px"
+
+        p.copyleft= "Copyright 2014 @ SilverAlms.com"

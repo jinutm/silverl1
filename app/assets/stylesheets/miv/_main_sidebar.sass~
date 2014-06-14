@@ -1,0 +1,88 @@
+$sidebar-title: #3F4752
+$sidebar-text: #79808E
+$sidebar-link: #F69219
+
+.main-sidebar
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  display: inline-block
+  width: 220px
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+
+.sidebar-list
+  li
+    margin: 0 0 .5em
+    text-align: center
+    background: #c7a663
+    border-radius: 10px
+    width: auto
+    padding: 5px 5px 5px 5px
+    &:hover
+      background: #fff
+  a
+    text-decoration: none
+    color: #4e4179
+    font-size: .9em
+    font-weight: bold
+    &:hover
+      text-decoration: none
+      color: #4e4179
+
+.main-sidebar-division
+  background: #c0bbdb
+  padding: 10px 10px 10px 10px
+  color: $sidebar-text
+  margin-bottom: 10px
+  &:last-child
+    border-bottom: none
+
+.sidebar-discover
+  padding: 17px 10px 0 10px
+
+  .title
+    font-size: 11px
+    width: auto
+    padding: 5px
+    background: #fff
+    color: #4e4179
+    padding: 5px
+    text-align: center
+    text-transform: uppercase
+    font-weight: bold
+    margin: 0 0 15px
+    border-bottom: 2px solid #4e4179
+
+  .post
+    padding-bottom: 30px
+    font-size: 12px
+    &:last-child
+      padding-bottom: 0
+  .post-title
+    color: $sidebar-text
+    font-size: 15px
+    font-weight: bold
+    text-decoration: none
+    line-height: 18px
+    &:hover
+      text-decoration: underline
+  .post-author
+    padding: 5px 0 10px 0
+    line-height: 15px
+  .post-resume
+    text-decoration: none
+    color: $sidebar-text
+    line-height: 15px
+
+  .explore-link
+    color: $sidebar-text
+    font-size: 15px
+    margin: 0 0 10px
+    text-decoration: none
+    display: block
+    &:hover
+      color: #fff
+      text-decoration: underline
+
+  .selected
+    font-weight: bold

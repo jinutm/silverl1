@@ -11,8 +11,8 @@ describe "Projects" do
     ProjectsController.any_instance.stub(:last_tweets).and_return([])
   }
   before {
-    CatarseSettings[:base_url] = 'http://catarse.me'
-    CatarseSettings[:company_name] = 'Catarse'
+    CatarseSettings[:base_url] = 'http://localhost:3000'
+    CatarseSettings[:company_name] = 'SilverAlms'
   }
 
 
@@ -60,7 +60,7 @@ describe "Projects" do
     before do
       project # need to build the project to create category before visiting the page
       login
-      visit new_project_path(locale: :pt)
+      visit new_project_path(locale: :en)
       sleep 1
     end
 
@@ -83,7 +83,7 @@ describe "Projects" do
 
     before do
       login
-      visit project_path(project, locale: :pt)
+      visit project_path(project, locale: :en)
     end
 
     it 'edit tab should be present' do

@@ -1,0 +1,66 @@
+.banner
+  .content
+   <iframe width="100%" height="550" src="//www.cincopa.com/media-platform/iframe.aspx?fid=AwKAcxLvVMb9" frameborder="0" allowfullscreen scrolling="no"></iframe>
+#page_content
+  .container
+    .main
+
+      section.expiring_projects.list
+        header
+          h2.list-title
+            = link_to "Urgent/Expiring", explore_path(anchor: :expiring)
+          = link_to t('sections.links.expiring'), explore_path(anchor: :expiring), class: "more-projects"
+        .projects
+          == render @expiring
+
+      section.selected_projects.list
+        header
+          h2.list-title
+            = link_to "We Recommended", explore_path(anchor: :recommended)
+          = link_to t('sections.links.recommended'), explore_path(anchor: :recommended), class: "more-projects"
+        .projects
+          == render @recommends
+
+      section.recents_projects.list
+        header
+          h2.list-title
+            = link_to "Latest Projects", explore_path(anchor: :recent)
+          = link_to t('sections.links.recents'), explore_path(anchor: :recent), class: "more-projects"
+        .projects
+          == render @recent
+
+      - if current_user && @projects_near.present?
+        section.near_projects.list
+          header
+            h2.list-title
+              = link_to "Near Me", explore_path(anchor: "near_of/" ) + current_user.address_state
+            = link_to t('.links.near'), explore_path(anchor: "near_of/" ) + current_user.address_state, class: "more-projects"
+          .projects
+            == render @projects_near
+
+    aside.main-sidebar
+      section.main-sidebar-division
+        h3.title= t('main.links.cat')
+        ul.sidebar-list
+          li= link_to t('main.links.cha').html_safe
+          li= link_to t('main.links.con').html_safe
+          li= link_to t('main.links.dai').html_safe
+          li= link_to t('main.links.edu').html_safe
+          li= link_to t('main.links.hand').html_safe
+          li= link_to t('main.links.hom').html_safe
+          li= link_to t('main.links.indbt').html_safe
+          li= link_to t('main.links.jobl').html_safe
+          li= link_to t('main.links.livly').html_safe
+          li= link_to t('main.links.meda').html_safe
+          li= link_to t('main.links.pubw').html_safe
+          li= link_to t('main.links.reli').html_safe
+          li= link_to t('main.links.othr').html_safe
+
+      section.main-sidebar-division
+        <script type="text/javascript" src="http://output19.rssinclude.com/output?type=js&amp;id=886573&amp;hash=707ab88e39b845e1e30979a7369df992"></script>
+
+      section.main-sidebar-division
+        .fb-like-box data-href="#{CatarseSettings['facebook_url']}" data-width="200" data-height="300" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"
+
+
+    .clearfix

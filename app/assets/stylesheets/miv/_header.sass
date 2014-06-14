@@ -6,23 +6,43 @@ $orange: #F69219
   margin: 0 auto
   width: 980px
 
+.header_wrapper
+  background: white
+  font-size: .7em
+  text-transform: uppercase
+  box-shadow: 0 10px 30px rgba(#8b8b8b,.3)
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 1000
+  a
+    color: inherit
+    text-decoration: none
+    &:hover, &:active
+      text-decoration: underline
+
 .header
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif
   display: inline-block
   width: 100%
   background: #fff
   padding: 1em 0
-  border-bottom: 1px solid $border-gray
+  box-shadow: 0 2px 2px 0 #d8d3d9
+  position: fixed
+  width: 100%
+  height: 60px
+  top: 0
+  z-index: 1000
   .logo
-    background: url("/assets/catarse_bootstrap/catarse-assets.png") repeat scroll -32px -14px transparent
+    background: url("/assets/logo.png") no-repeat transparent
     display: block
     float: left
     height: 50px
     text-indent: -9999em
-    width: 151px
+    width: 243px
     transition: 0.4s all
     &:hover
-      opacity: 0.5
+      opacity: 0.8
 
 .header-nav
   float: right
@@ -31,15 +51,19 @@ $orange: #F69219
     display: inline-block
     margin: 0 0 0 15px
     line-height: 50px
+    height: 50px
     vertical-align: bottom
     a
+      text-transform: uppercase
       text-decoration: none
       &:hover
-        text-decoration: underline
+        color: #c8a563
+        border-bottom: 2px solid #4e4179
+        text-decoration: none
   .project
-    color: $green-one
+    color: #4e4179
     font-weight: bold
-    font-size: 15px
+    font-size: 13px
   .header-nav-item
     color: $blue-two
     font-size: 13px

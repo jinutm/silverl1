@@ -2,40 +2,32 @@ br
 - if policy(@project).update?
   #project_warning.bootstrap-alert
     .alert.alert-warning
-      i Bem-vindo ao Rascunho!
+      i  Welcome to Draft!
       #toggle_warning
-        = link_to '(minimizar informações)', '#'
+        = link_to '(minimize information)', '#'
       #project_warning_text
         br/
         br/
-        | Para editar a página do seu projeto procure abaixo pela <strong>aba de EDIÇÃO</strong>, realize todas as alterações no formulário e clique em <strong>ATUALIZAR INFORMAÇÕES</strong>.
+        | To edit the page of your project look under the tab <strong> EDITION </strong>, take all changes to the form and click <strong> UPDATE INFORMATION </strong>..
         br/
-        | As recompensas podem ser adicionadas diretamente na coluna onde ficam expostas, para isso basta clicar em <strong>ADICIONAR RECOMPENSA</strong>. 
-        br/
-        br/
-        strong Importante!
-        br/
-        | Seu projeto só será avaliado pela nossa equipe quando você clicar no botão <strong>ENVIAR PROJETO</strong>. Iremos analisar a consistência do seu projeto apenas com base nas informações presentes no seu rascunho, 
-        | por isso seja bastante claro e objetivo na construção desta página. O <strong>vídeo</strong> não é obrigatório para a avaliação, apenas para o projeto ir ao ar. 
-        | Caso você já o tenha pronto, disponibilize pra gente. Quanto mais informação para o nosso atendimento e avaliação, melhor. Não deixe de estudar os 
-        | artigos da nossa #{link_to 'Central de Suporte!', CatarseSettings[:support_forum], target: '__blank'} Lá você pode se informar sobre a maioria dos processos que ocorrem antes, durante e depois de uma campanha no Catarse!
+        | The rewards can be added directly into the column where they are exposed to it just click ADD <strong> REWARD </strong>. 
         br/
         br/
-        strong Solução de problemas:
+        strong Important
         br/
-        | Confira: #{link_to 'Realizadores - Primeiros Passos', 'http://suporte.catarse.me/hc/pt-br/sections/200406978-Realizadores-Primeiros-passos', target: '__blank'}
-      br/
-      br/
-      .bootstrap-twitter
-        = link_to 'Enviar projeto', send_to_analysis_project_path(@project), class: 'btn btn-large'
+        | Your design will only be evaluated by our staff when you click the SEND button <strong> DESIGN </strong>. We will analyze the consistency of your project based only on the information provided in the draft, 
+        | Why is fairly clear and objective in building this page. The <strong> video </strong> is not required for the evaluation, only for the project go live. 
+        | If you have already done, make available to us. The more information to review our treatment and is better. Be sure to study the 
+        | Documents in #{link_to 'Support!', CatarseSettings[:support_forum], target: '__blank'}  There you can find out about most processes that occur before, during and after a campaign in SilverAlms!
+        br/
+        br/
 - else
   #project_warning.bootstrap-alert
     .alert.alert-warning
-      i Atenção! Este projeto ainda está em rascunho.
+      i  Attention! This project is still in draft..
       #toggle_warning
-        = link_to '(minimizar informações)', '#'
+        = link_to '(minimize information)', '#'
       #project_warning_text
         br/
         br/
-        | Este projeto ainda não está apto a receber contribuições financeiras e as informações dessa página não são definitivas. 
-        | Se você quer dar uma força desde já, deixe seu feedback para o(a) realizador(a) na <strong>Aba de Comentários</strong>.
+        |  This design is not yet able to receive financial contributions and the information on this page are not definitive. 

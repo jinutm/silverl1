@@ -8,7 +8,7 @@ gem 'protected_attributes', '~> 1.0.5' # When upgrade to strong_parameters, remo
 gem 'rails-observers', '~> 0.1.2'
 
 gem 'sidekiq',  '~> 2.15.2'
-gem 'sinatra', require: false # required by sidekiq web interface mounted on /sidekiq
+gem 'sinatra' # required by sidekiq web interface mounted on /sidekiq
 
 # Turns every field on a editable one
 gem 'best_in_place', github: 'bernat/best_in_place', branch: 'rails-4'
@@ -94,7 +94,7 @@ group :production do
 
   # Enabling Gzip on Heroku
   # If you don't use Heroku, please comment the line below.
-  gem 'heroku-deflater', '>= 0.4.1'
+  #gem 'heroku-deflater', '>= 0.4.1'
 
   # Make heroku serve static assets and loggin with stdout
   #gem 'rails_on_heroku'

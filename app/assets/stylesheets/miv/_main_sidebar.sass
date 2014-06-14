@@ -8,24 +8,50 @@ $sidebar-link: #F69219
   box-sizing: border-box
   display: inline-block
   width: 220px
-  padding: 40px 0 0 20px
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif
 
-.sidebar-discover
-  padding: 105px 0 0 20px
+.sidebar-list
+  li
+    margin: 0 0 .5em
+    text-align: center
+    background: #dcb874
+    border-radius: 10px
+    width: auto
+    padding: 5px 5px 5px 5px
+    &:hover
+      background: #fff
+  a
+    text-decoration: none
+    color: #4e4179
+    font-size: .9em
+    font-weight: bold
+    &:hover
+      text-decoration: none
+      color: #4e4179
 
 .main-sidebar-division
-  padding: 20px 0
+  background: #c0bbdb
+  padding: 10px 10px 10px 10px
   color: $sidebar-text
+  margin-bottom: 10px
   &:last-child
     border-bottom: none
 
+.sidebar-discover
+  padding: 17px 10px 0 10px
+
   .title
     font-size: 11px
-    color: $sidebar-title
+    width: auto
+    padding: 5px
+    background: #fff
+    color: #4e4179
+    padding: 5px
+    text-align: center
     text-transform: uppercase
     font-weight: bold
     margin: 0 0 15px
+    border-bottom: 2px solid #4e4179
 
   .post
     padding-bottom: 30px
@@ -55,7 +81,7 @@ $sidebar-link: #F69219
     text-decoration: none
     display: block
     &:hover
-      color: $sidebar-link
+      color: #fff
       text-decoration: underline
 
   .selected

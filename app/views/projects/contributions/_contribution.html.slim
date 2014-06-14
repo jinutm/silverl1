@@ -29,12 +29,12 @@
           = contribution.reward.medium_description
       - else
         | &nbsp;
-        = t('.no_reward')
+        = "I don't need a Reward"
       - if contribution.user.email
         .user_email = contribution.user.email
       - else
         | &nbsp;
-        = t('not_informed')
+        = "I don't need a Reward"
       |.
 
   .clear

@@ -3,36 +3,19 @@
 puts 'Seeding the database...'
 
 [
-  { pt: 'Arte', en: 'Art' },
-  { pt: 'Artes plásticas', en: 'Visual Arts' },
-  { pt: 'Circo', en: 'Circus' },
-  { pt: 'Comunidade', en: 'Community' },
-  { pt: 'Humor', en: 'Humor' },
-  { pt: 'Quadrinhos', en: 'Comicbooks' },
-  { pt: 'Dança', en: 'Dance' },
-  { pt: 'Design', en: 'Design' },
-  { pt: 'Eventos', en: 'Events' },
-  { pt: 'Moda', en: 'Fashion' },
-  { pt: 'Gastronomia', en: 'Gastronomy' },
-  { pt: 'Cinema e Vídeo', en: 'Film & Video' },
-  { pt: 'Jogos', en: 'Games' },
-  { pt: 'Jornalismo', en: 'Journalism' },
-  { pt: 'Música', en: 'Music' },
-  { pt: 'Fotografia', en: 'Photography' },
-  { pt: 'Ciência e Tecnologia', en: 'Science & Technology' },
-  { pt: 'Teatro', en: 'Theatre' },
-  { pt: 'Esporte', en: 'Sport' },
-  { pt: 'Web', en: 'Web' },
-  { pt: 'Carnaval', en: 'Carnival' },
-  { pt: 'Arquitetura e Urbanismo', en: 'Architecture & Urbanism' },
-  { pt: 'Literatura', en: 'Literature' },
-  { pt: 'Mobilidade e Transporte', en: 'Mobility & Transportation' },
-  { pt: 'Meio Ambiente', en: 'Environment' },
-  { pt: 'Negócios Sociais', en: 'Social Business' },
-  { pt: 'Educação', en: 'Education' },
-  { pt: 'Filmes de Ficção', en: 'Fiction Films' },
-  { pt: 'Filmes Documentários', en: 'Documentary Films' },
-  { pt: 'Filmes Universitários', en: 'Experimental Films' }
+  { pt: 'Charity Activities', en: 'Charity Activities' },
+  { pt: 'construções', en: 'Constructions' },
+  { pt: 'pão de cada dia', en: 'Daily Bread' },
+  { pt: 'educação', en: 'Education' },
+  { pt: 'Handicapped', en: 'Handicapped' },
+  { pt: 'sem casa', en: 'Homeless' },
+  { pt: 'endividado', en: 'Indebted' },
+  { pt: 'Jobless', en: 'Jobless' },
+  { pt: 'Livelihood', en: 'Livelihood' },
+  { pt: 'assistência médica', en: 'Medical Aid' },
+  { pt: 'Public Welfare', en: 'Public Welfare' },
+  { pt: 'religioso', en: 'Religious' },
+  { pt: 'others', en: 'Others' }
 ].each do |name|
    category = Category.find_or_initialize_by(name_pt: name[:pt])
    category.update_attributes({
@@ -41,35 +24,39 @@ puts 'Seeding the database...'
  end
 
 {
-  company_name: 'Catarse',
-  company_logo: 'http://catarse.me/assets/catarse_bootstrap/logo_icon_catarse.png',
-  host: 'catarse.me',
-  base_url: "http://catarse.me",
+  company_name: 'SilverAlms.com',
+  company_logo: 'http://localhost:3000/assets/catarse_bootstrap/logo_icon_catarse.png',
+  host: 'localhost:3000',
+  base_url: "http://localhost:3000",
 
-  email_contact: 'contato@catarse.me',
-  email_payments: 'financeiro@catarse.me',
-  email_projects: 'projetos@catarse.me',
-  email_system: 'system@catarse.me',
-  email_no_reply: 'no-reply@catarse.me',
-  facebook_url: "http://facebook.com/catarse.me",
-  facebook_app_id: '173747042661491',
-  twitter_url: 'http://twitter.com/catarse',
-  twitter_username: "catarse",
-  mailchimp_url: "http://catarse.us5.list-manage.com/subscribe/post?u=ebfcd0d16dbb0001a0bea3639&amp;id=149c39709e",
-  catarse_fee: '0.13',
-  support_forum: 'http://suporte.catarse.me/',
-  base_domain: 'catarse.me',
-  uservoice_secret_gadget: 'change_this',
-  uservoice_key: 'uservoice_key',
-  faq_url: 'http://suporte.catarse.me/',
-  feedback_url: 'http://suporte.catarse.me/forums/103171-catarse-ideias-gerais',
-  terms_url: 'http://suporte.catarse.me/knowledgebase/articles/161100-termos-de-uso',
-  privacy_url: 'http://suporte.catarse.me/knowledgebase/articles/161103-pol%C3%ADtica-de-privacidade',
-  about_channel_url: 'http://blog.catarse.me/conheca-os-canais-do-catarse/',
-  instagram_url: 'http://instagram.com/catarse_',
-  blog_url: "http://blog.catarse.me",
-  github_url: 'http://github.com/catarse',
-  contato_url: 'http://suporte.catarse.me/'
+  email_contact: 'contact@support.silveralms.com',
+  email_payments: 'payments@support.silveralms.com',
+  email_projects: 'projects@support.silveralms.com',
+  email_system: 'system@support.silveralms.com',
+  email_no_reply: 'no-reply@support.silveralms.com',
+  facebook_url: "https://www.facebook.com/pages/SilverAlmsCom/1432743666987583",
+  facebook_app_id: '686963018037797',
+  twitter_url: 'http://twitter.com/silveralms',
+  twitter_username: "silveralms",
+  mailchimp_url: "http://ownmanager.us8.list-manage1.com/subscribe?u=9f171110a102fc24feed06f24&id=1df03ad4dd",
+  mailchimp_api_key: '0fc042d8ac466115a48e779e04770258-us8',
+  catarse_fee: '0.10',
+  support_forum: 'http://blog.silveralms.com',
+  base_domain: 'localhost:3000',
+  paypal_username: 'jtmsss_api1.yahoo.com',
+  paypal_password: 'FCUBSHJJ9HBWTY2L',
+  paypal_signature: 'A.A-8UOGDek6uyXy2N.a3h8WjyuHAaDBxo0OjvTdG5.1IMGIyaoxHJJf',
+  uservoice_secret_gadget: 't4YVh1DqPV4t99sFoAUv9wL2XY137LRjbD6gfyN0CtA',
+  uservoice_key: 'CFL6GwuDuCmFpfAQhe8AA',
+  faq_url: 'http://blog.silveralms.com',
+  feedback_url: 'http://blog.silveralms.com/feedback',
+  terms_url: 'http://blog.silveralms.com/terms',
+  privacy_url: 'http://blog.silveralms.com/privacy',
+  about_channel_url: 'http://blog.silveralms.com/channel',
+  instagram_url: 'http://instagram.com/slveralms',
+  blog_url: "http://blog.silveralms.com",
+  github_url: 'http://github.com/jinutm',
+  contato_url: 'http://blog.silveralms.com/contactus'
 }.each do |name, value|
    conf = CatarseSettings.find_or_initialize_by(name: name)
    conf.update_attributes({
@@ -85,8 +72,8 @@ end
 
 
 OauthProvider.find_or_create_by!(name: 'facebook') do |o|
-  o.key = 'your_facebook_app_key'
-  o.secret = 'your_facebook_app_secret'
+  o.key = '686963018037797'
+  o.secret = 'aafec836b6d5493ce8ab61af0d63d5a1'
   o.path = 'facebook'
 end
 

@@ -1,0 +1,15 @@
+# encoding: utf-8
+
+class AddNewCategories < ActiveRecord::Migration
+  def up
+    execute "
+    INSERT INTO categories (name_pt, name_en, created_at, updated_at) VALUES ('outros', 'Others', now(), 
+    "
+  end
+
+  def down
+    execute "
+    DELETE FROM categories WHERE name_pt = 'outros';
+    "
+  end
+end

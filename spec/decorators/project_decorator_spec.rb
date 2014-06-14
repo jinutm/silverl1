@@ -8,7 +8,7 @@ describe ProjectDecorator do
     let(:expires_at){ Time.zone.parse("23:00:00") }
     subject{ project.time_to_go }
     before do
-      I18n.locale = :pt
+      I18n.locale = :en
       project.stub(:expires_at).and_return(expires_at)
     end
 

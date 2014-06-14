@@ -16,7 +16,8 @@ fr:
       statistics:
         title: 'statistiques'
         total_subscribers: 'Total des abonnés'
-    projects:
+  projects:
+    project:
       send: "Soumettez votre project"
       see_how_it_works: "Regardez comment ça marche et soumettez votre projet"
       how_it_works: "Comment ça marche"

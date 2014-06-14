@@ -1,23 +1,28 @@
 header
   padding: .4em 0
+  background: white
   min-height: 85px
-  border-bottom: 2px solid $border-gray
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 1000
+  box-shadow: 0 2px 2px 0 #b4aa92
   h1
     margin: 0
 
 .logo
-  background: url("/assets/catarse_bootstrap/catarse-assets.png") repeat scroll -32px -14px transparent
+  background: url("/assets/logo.png") no-repeat transparent
   display: block
   float: left
   height: 50px
   text-indent: -9999em
-  width: 151px
+  width: 243px
   transition: 0.4s all
   &:hover
     opacity: 0.5
 
 .logo-image
-  background: url("/assets/catarse_bootstrap/catarse-assets.png") repeat scroll -32px 90px transparent
+  background: url("/assets/logo.png") no-repeat transparent
   display: block
   float: left
   height: 64px
@@ -33,7 +38,7 @@ header
   padding-left: 0
   a
     padding-left: 15px
-    color: $green
+    color: #55417e
     font-weight: 700
     font-size: 14px
 
@@ -46,7 +51,7 @@ header
     padding-left: 10px
   a
     padding-left: 15px
-    color: $blue-two
+    color: #55417e
     font-size: 13px
   .locales
     a
@@ -88,8 +93,20 @@ header
     text-indent: -9999em
     width: 20px
 
+.cat-dropdown
+  height: 60px
+  margin-top: 15px
+  padding-left: 0
+  position: absolute
+  top: 0
+  visibility: hidden
+  &:hover ul
+    visibility: visible
+    display: block
+    top: 15px
+
 .user-dropdown
-  height: 30px
+  height: 60px
   margin-top: 15px
   padding-left: 0
   &:hover ul

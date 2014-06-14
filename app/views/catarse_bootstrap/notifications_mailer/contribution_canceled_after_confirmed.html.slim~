@@ -1,0 +1,12 @@
+- contribution = @notification.contribution
+|Projeto: #{contribution.project.name}
+br/
+|Chave do apoio: #{contribution.key}
+br/
+|ID meio de pagamento: #{contribution.payment_id}
+br/
+br/
+|This support received notification of cancellation after having already received a confirmation notification.
+br/
+|Check the payment method website the actual status of the transaction and, if confirmed as the support included, confirm it on the site SilverAlms (adm/contributions)
+

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe ContributionDecorator do
   before do
-    I18n.locale = :pt
+    I18n.locale = :en
   end
 
   describe "#display_confirmed_at" do
@@ -22,12 +22,12 @@ describe ContributionDecorator do
 
     context "when the value has decimal places" do
       subject{ build(:contribution, value: 99.99).display_value }
-      it{ should == "R$ 100" }
+      it{ should == "$ 100" }
     end
 
     context "when the value does not have decimal places" do
       subject{ build(:contribution, value: 1).display_value }
-      it{ should == "R$ 1" }
+      it{ should == "$ 1" }
     end
   end
 end
